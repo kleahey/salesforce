@@ -1,15 +1,14 @@
 require 'restforce'
 require 'aws-sdk'
 require 'mysql2'
-require './libs/restforce'
-require './libs/rds'
+require './libs/configs'
 require 'time'
 
 # Time
 start = Time.now
 
 # Initialize RDS Connection with Mysql2
-rds = Rds.initialize
+rds = Commonapp.rds
 
 # Query to pull all of the common screens in the Common Application
 results = rds.query("SELECT sc.ScreenId,
