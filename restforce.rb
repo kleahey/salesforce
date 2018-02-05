@@ -102,7 +102,6 @@ sections.map do |x|
                 Parent__c: mapping[ x["ScreenId"].to_s ])
 end
 
-=begin
 # Query to pull all of the Member screens in the Common Application
 results = rds.query("SELECT m.MemberId,
 	                        m.Name,
@@ -184,7 +183,6 @@ member_sections.map do |x|
                 Parent__c: mapping[ x["ScreenId"].to_s ],
                 Account__c: members[ x["MemberId"].to_s ])
 end
-=end
 
 # Time
 finish = Time.now
