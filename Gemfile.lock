@@ -554,6 +554,7 @@ GEM
       json (>= 1.7.5)
     salesforce_bulk (1.0.3)
       xml-simple
+    stringex (2.8.2)
     xml-simple (1.1.5)
 
 PLATFORMS
@@ -561,11 +562,13 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk
+  hashie
   mysql2
   oauth
   pp
   restforce
   salesforce_bulk
+  stringex
 
 BUNDLED WITH
-   1.15.4
+   1.16.1

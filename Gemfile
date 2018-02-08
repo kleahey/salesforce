@@ -11,3 +11,5 @@ gem "salesforce_bulk"
 gem "mysql2"
 gem "aws-sdk"
 gem 'pp'
+gem 'stringex'
+gem 'hashie'
