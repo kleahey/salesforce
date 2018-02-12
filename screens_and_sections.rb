@@ -172,8 +172,7 @@ def refresh_all_screens_and_sections
   member_section_upsert
 end
 
-member_screen_upsert
-member_section_upsert
+refresh_all_screens_and_sections
 
 # Time end
 finish = Time.now

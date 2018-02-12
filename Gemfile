@@ -6,10 +6,8 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 # gem "rails"
 
 gem "restforce"
-gem "oauth"
-gem "salesforce_bulk"
+gem "restforce-bulk"
 gem "mysql2"
-gem "aws-sdk"
-gem 'pp'
 gem 'stringex'
-gem 'hashie'
+gem 'salesforce_bulk_api'
+gem 'logger'
