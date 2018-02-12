@@ -172,4 +172,10 @@ def delete_records(object)
   end
 end
 
-bulk_export_to_salesforce
+def update_all_faq_objects_for_publish_articles
+  client = Salesforce.initialize
+  results = client.query("SELECT Id FROM FAQ__c")
+  results.map do |m|
+    client.update("FAQ__c", Id: m.Id, Status__c: "Published - Ready for Updates", Submitted__c: false)
+  end
+end
